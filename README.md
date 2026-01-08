@@ -1,6 +1,6 @@
-![image unavailable](BalatroIcebergV1.2.png)
+![image unavailable](BalatroIcebergV1.3.png)
 
-V1.2
+V1.3
 by u/warty54 on Reddit
 
 ZEROTH LAYER
@@ -95,9 +95,13 @@ Baron-Mime - This type of build is one of the main two typical builds used in Hi
 
 Idol-Hack - This is the other main kind of build used in High-Score runs. It consists in having a retrigger Joker (which doesn’t need to be Hack but could also be Sock and Buskin or Dusk) and the Idol, a Joker that doubles the mult each time a card randomly chosen from the deck is scored. To make the Idol always choose the card you want, perfect deck-fixing is required (with every card of the deck being the same rank and suit).
 
+Preserving the Fool - Sometimes the best strategy regarding tarot cards is to wait before using less important tarots so that you can find the Fool and get the tarot that you just used right away. This strategy is predominately used to get more copies of Death and The Hanged Man tarots.
+
 Perkeo Observatory - The upgraded voucher of Telescope is a voucher named “Observatory”, which gives x1.5 mult for each planet card held in the consumable slots if specified hand (of the planet cards) is played. Observatory alone isn’t that good, since you have a maximum of three consumable slots, but having the legendary Joker Perkeo makes it a really good scoring option. Perkeo’s ability is to double a random consumable held, and it can be copied by Blueprint and Brainstorm. This means that (if the planet card is Pluto, and you’ve already got Antimatter and three Ectoplasms landing on Blueprints) if you have Perkeo and eight Blueprints you’ll be able to get nine copies of Pluto in one round, increasing the score by 38.4 times each round.
 
 Demo Version - Before the game came out, LocalThunk released a demo version of Balatro for the people to play with reduced available Jokers and different UI in some areas.
+
+Hand Agnostic Builds - Often, while playing the game, you will rely on your hand level to get your score higher. However, sometimes you will not need to level your hand, since you have already gotten all the score that you need. This happens when in your Joker roster you have both a good +Chips Joker and a good +Mult Joker, and a bunch of xMult Jokers as usual.
 
 Ante 39 - In the first eight antes the score increase is manageable and you are able to scale your Jokers faster than the blinds, though, in endless, it is not the case. After ante eight the score gets bigger and bigger every ante and eventually the base score required increments by factors of thousands each ante. At ante thirty-eight the base score requirement is 9.0e288, which still is small enough for it to be understood by the game. At ante thirty-nine the score requirement is a bit less than ten billion times bigger and so surpasses the 64-bit float limit, and gets displayed as “nan” (meaning “not a number”). Since logic operations cannot be done with “not a number” the game cannot check if your score is greater than it, so, even if you score naneinf you’ll lose.
 
@@ -207,11 +211,15 @@ Multiple Chicots - Chicot is one of the five legendary Jokers in the game, his e
 
 Cola-Compatible Blueprint - The uncommon Joker “Diet Cola” gives you a Double Tag when you sell it, strangely enough, it is compatible with Blueprint. This means that if you’re able to get a naturally negative Diet Cola, having a Showman, every time you find a Blueprint in the shop without being able to take it, you can just copy the Diet Cola and sell that Blueprint, to immediately buy a new one.
 
+Level Zero Hands - The Arm boss blind lowers the level of played hands by one. In older versions, playing a hand with level one would also lower its level to level zero.
+
 Matador rework - LocalThunk has mentioned in an interview with Bloomertag that he’s going to change the effect of the Joker “Matador” due to it being “confusing”.
 
 Stake Changes - Before the 1.0.1f update, Orange and Gold stakes each had a different debuff instead of the new ones: on Orange Stake the price of booster packs in the shop would increase by one dollar each passing ante; and on Gold Stake you would have one hand size less. It is worth noting that LocalThunk has also mentioned in an interview changing the current ability of the Blue Stake (-1 discard), since it discourages playing five-card hands.
 
 Stencil naneinf - As mentioned in the “Negative Hand Size” entry, it is possible to get incredible amounts of the same Joker for just one round and even achieve naneinf with those. The Joker Stencil has the unique ability of multiplying the mult by the number of free Joker slots (Joker slots containing a Joker Stencil count as empty), this means that if you got this way, let’s say, fifty Joker Stencils, each one would multiply the mult by fifty, and the number only increases for each other Joker Stencil that you get. It is possible to get naneinf this way.
+
+Showman Glitch - Seldomly, after selling a Showman, its properties are still active for the shop rerolls to come. We do not know the cause for this bug.
 
 Sneak Peek - In the shop of the demo version of Balatro, a “Sneak Peek” tab would appear on the right of the shop slots, showing Jokers and Vouchers that weren’t in the demo but were going to be in the full version of the game. If you hovered over said item, a description will appear telling you that it is only available in the full version.
 
@@ -225,6 +233,8 @@ Not “Saved!” - Mr. Bones is a Joker that prevents the end of your run when y
 Sticker Criteria - While stickers are given randomly to Jokers in the shop there still exists some criteria used to determine which stickers a Joker can have. Food Jokers (Popcorn, Ice Cream, Diet Cola, Seltzer, Gros Michel, Cavendish, Ramen, Turtle Bean, etc.) cannot have the eternal sticker: this is due to the fact that those Jokers are either bound to get consumed eventually or can randomly get destroyed. Scaling Jokers (ones that start at +0 chips, +0 mult and x1 mult, and scale up) cannot be found with the perishable sticker, this may be due to game design and balancing decisions. Every Joker can be a rental.
 
 “Chaos Theory” - This is a scrapped Joker that didn’t make the final cut into the game. We don’t know which ability it would’ve had but its sprite was drawn by the same person that drew the sprite for Vagabond (LumpyTouch).
+
+Guaranteed Unstickered Legendary - If you haven’t gotten a gold sticker on all legendary Jokers, while playing gold stake, if you use a Soul card you will 100% of the time get a legendary Joker which has yet to get its golden sticker. This feature was implemented to make the process of getting the Completionisti++ achievement easier.
 
 Pack Softlock - Being “softlocked” means being stuck and unable to progress a playthrough of a videogame thanks to a bug or an unintended feature. It is possible to softlock yourself in Balatro by destroying all of the cards in your hand in a Mega Spectral/Arcana pack. After having done so you’d think that you would be able to proceed with your run by pressing the “Skip” button, but, unfortunately, that button is grayed out. This leaves you, as the only way to keep enjoying the game, starting a new run.
 
@@ -246,6 +256,8 @@ Glass Imperfection - By looking at the texture of a glass card, you can see to t
 Deterministic Randomness - While probabilistic events (like lucky card triggers or glass cards breaking) might seem random at first, looking at the game’s code reveals that each seed has predetermined times at which random events occur; meaning, if you were to play the same seed in exactly the same way you would get the same random outcomes.
 
 Reroll Tag uses Director’s Cut - If you skip a blind with a reroll tag, which is a tag that rerolls the Boss Blind, while having the Voucher “Director’s Cut” (but not its upgraded one), the button that lets you reroll the Boss Blind will gray out, even though you haven’t used it. This must mean that the developer reused the code from Director’s Cut for making the reroll tag, but forgot to delete the part which makes the reroll button gray.
+
+Full Joker Slots Ankh - Using the Ankh spectral card having all Joker Slots filled with eternal Jokers will result in the Ankh texture bugging out and staying overlaid on your screen, without doing anything.
 
 Polychrome Hue Shifting - Polychrome cards are known for their rainbow look, though that rainbow overlay after some time (six years approximately on desktop version, six hours approximately on mobile) breaks. It starts changing by displaying three colors at a time: red, yellow and blue; that after some time become green and purple. After that all the colors briefly turn back to blue to at the end become all black.
 (suggested by u/Jolly_Reality3094)
