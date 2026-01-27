@@ -186,7 +186,7 @@ Startup Joker Sticker - The stake sticker that Jimbo (the Joker that gives +4 mu
 Observatory naneinf - Some people suggested the possibility of getting naneinf by solely using the combination of Perkeo and Observatory. While that is possible when supplementing the Observatory with another source of scoring, doing that using only the Observatory as a source of score is practically impossible, and here’s why.
 For the sake of convenience and calculations let’s say we’re using High Card as our hand and it is level one (we’re stockpiling Plutos). Also, for the sake of simplicity, I’m just going to write “Blueprint” instead of “Blueprint/Brainstorm”, since both work for the build. Each Pluto added to the Observatory is x1.5 mult to the total, and we know that the score needed is circa e308. This calculation below tells me how many planets will be needed to achieve naneinf:
 
-1.5(10308)1751 
+log1.5(10^308)= 1751 
 On a normal deck:
 It’s impossible.
 
